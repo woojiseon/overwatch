@@ -1,0 +1,198 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+header{
+  background:url(../image/배경5.webp) no-repeat top ;
+}
+
+#tabmenu{
+	width: 100%;
+	height: 870px;
+  background: linear-gradient(to top ,rgba(84, 46, 119, 0.5) , lightblue);
+	padding: 80px 0;
+	margin: auto;
+	text-align:center;
+}
+
+
+
+.mtab li{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	margin: 0 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 30px;
+	font-weight: 500;
+	color: #333;
+	line-height: 55px;
+	box-shadow: 0 0 10px #333;
+	transition: 0.2s;
+	overflow: hidden;
+}
+
+.mtab li a{
+	width: inherit;
+	height: inherit;
+	display: inline-block;
+}
+
+#tabmenu .mtab li a:not(.active):hover{
+	color: #fff;
+	background-color: darkorange;
+}
+
+#tabmenu .mtab li a.active{
+	color: #fff;
+	background-color: darkorange;
+}
+
+
+
+/*  __________________________  */
+
+.tab{
+	display:inline-block;
+	margin: 50px 0;
+}
+
+.tab li{
+  float:left;
+	margin:0 50px;
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px #333;
+	position: relative;
+
+}
+
+
+.tab li img{
+	width: 55px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
+	filter: brightness(2);
+}
+
+
+
+.tab li:not(.active):hover{
+	filter: brightness(0);
+}
+
+.tab li.active{
+	filter: brightness(0);
+
+}
+
+
+.tab li:last-child img{
+	width: 65px;
+}
+
+/* ____________ */
+
+
+
+.panel{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: auto;
+	color:#fff;
+	font-size:14px;
+  padding-bottom:100px;
+	overflow: hidden;
+}
+.panel>li{display: none;}
+.panel>li.active{display: block;}
+
+
+.gallery{ 
+	width: 600px;
+	height: 580px;
+	margin: 0 auto;
+	background:url(../image/메인배경1.jpg);
+	box-shadow: 0 0 100px 20px crimson inset;
+	position:relative;
+	border-radius: 50%;
+}
+.largeImg li{
+	display:none;
+
+}
+
+.largeImg li:first-child{display:block;}
+
+
+.largeImg li img{
+	width: 500px;
+	position:absolute;
+	top:0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.panel li:nth-of-type(2) img{
+	width: 450px;
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	color: #333;
+	text-shadow: 3px 3px 5px gray;
+}
+
+.panel .content{
+  text-align:center;
+  margin-top:150px;
+	color: #fff;
+	text-shadow: 0 0 10px black;
+}
+.panel h4{
+  font-size:40px;
+	font-weight:600;
+}
+
+.panel p{
+  font-size:26px;
+	margin:60px 0;
+  line-height:30px;
+}
+
+
+.panel .btn a{
+  float:right;
+	width: 180px;
+	height:60px;
+	line-height:60px;
+  text-align:center;
+	background-color: rgb(255, 102, 0);
+	color: #333;
+  font-size:24px;
+	font-weight: 500;
+  border-radius: 10px;
+	box-shadow: 0 5px 10px #333;
+	transition: 0.2s;
+	text-shadow: none;
+}
+
+
+
+.panel .btn a:hover{
+	background:rgb(255, 133, 62);
+}
+
+
+

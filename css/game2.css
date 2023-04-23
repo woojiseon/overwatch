@@ -1,0 +1,193 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+header{
+  background:url(../image/배경5.webp) no-repeat top ;
+
+}
+
+#tabmenu{
+	width: 100%;
+	height: 980px;
+  background: linear-gradient(to top ,rgba(84, 46, 119, 0.5) , lightblue);
+	padding: 30px 0;
+}
+
+.mtab{
+	width: 1200px;
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+
+}
+
+.mtab li{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	margin: 0 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 30px;
+	font-weight: 500;
+	color: #333;
+	line-height: 55px;
+	box-shadow: 0 0 10px #333;
+	text-align: center;
+	transition: 0.2s;
+	overflow: hidden;
+}
+
+.mtab li a{
+	width: inherit;
+	height: inherit;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+
+#tabmenu .mtab li a:not(.activ):hover{
+	color: #fff;
+	background-color: darkorange;
+}
+#tabmenu .mtab li a.activ{
+	color: #fff;
+	background-color: darkorange;
+}
+
+
+#tabmenu p{
+	text-align:center;
+	font-size:60px;
+	color:#fff;
+	padding: 50px 0;
+}
+#tabmenu p img{
+	margin-top:20px;
+	padding:0 20px 0 20px;
+}
+
+
+.tab{
+	width: 1000px;
+	height: 100px;
+	margin: auto;
+
+}
+.tab li{
+	width: 125px;
+	height: inherit;
+	float:left;	
+	text-align: center;
+	cursor: pointer;
+}
+
+.tab li img{
+	width: 50px;
+}
+
+.tab li span{
+	display: block;
+	font-size: 22px;
+	color: #fff;
+}
+
+#tabmenu .tab  li:not(.active):hover{
+	filter: invert(2);
+}
+
+#tabmenu .tab li.active{
+	filter: invert(2);
+}
+
+
+
+
+.tabContents{ 
+	width:1200px;
+	height:800px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+
+
+.tabContents h2{
+	font-size: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 0 10px black;
+}
+
+
+
+.tabContents div ul li{float:left;} 
+
+.tabContents div ul li img{ 
+	margin-top: 30px;
+	width: 1200px; 
+	height: 600px;
+	border-radius:20px;
+
+}
+
+
+
+.tabContents h3{
+
+	font-size:24px;
+	color:#fff;
+	font-weight:bold;
+	margin: 10px auto;
+	text-shadow: 0 0 10px black;
+}
+
+
+
+.tabContents div{display: none;}
+.tabContents div.active{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

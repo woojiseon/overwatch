@@ -1,0 +1,65 @@
+
+footer{
+  width: 100%;
+  background: radial-gradient(#6f5eac , rgb(8, 8, 58));
+  box-shadow: 0 0 20px black inset;
+}
+
+footer .fcontent{
+  width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer .fcontent img{
+  display: block;
+  margin: auto;
+}
+
+footer .fcontent h4,
+footer .fcontent address{
+  color: #c0bebe;
+  font-weight: normal;
+  font-style: normal;
+  padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

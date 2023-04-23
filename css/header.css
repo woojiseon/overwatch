@@ -1,0 +1,176 @@
+
+
+#wrap{width:100%;}
+
+html{scroll-behavior: smooth;}
+
+.mbox{  
+	height: 600px;
+  background-size: cover;
+}
+
+header{
+  height: 570px;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+
+nav{
+  width: 1400px;
+  height: 95px;
+  background-color: rgba(255, 230, 230, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  z-index: 500;
+}
+
+nav h1{
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+nav h1:hover img:first-child{
+  filter: brightness(1.3);
+}
+
+nav h1 img:last-child{
+  transform: translateY(-5px)
+}
+
+nav h1:hover img:last-child{
+  filter: contrast(1.4);
+}
+
+.gnb{
+  width: 78%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.gnb .main{
+  text-align: center;
+  position: relative;
+}
+
+.gnb > .main > a{
+  display: block;
+  width: 170px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #222;
+  padding: 10px 0;
+  position: relative;
+}
+
+.gnb>.main:hover>a{
+  color: #666
+}
+
+.gnb> .first > a:after{   /* 화살표 */
+  content: "\f0dd";
+  font-family: fontawesome;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  font-size: 28px;
+}
+
+.gnb .main:last-child{
+  position: absolute;
+  right: 70px;
+  color: #fff;
+}
+
+.gnb .main:last-child a{
+  width: 220px;
+  height: 50px;
+  background-color: rgb(255, 102, 0);
+  border-radius: 15px;
+  line-height: 50px;
+  color: #fff;
+  box-shadow: 0 5px 10px #000;
+}
+
+
+.gnb .main:last-child:hover a{
+  background-color: rgb(247, 128, 49);
+}
+
+
+/* Sub Menu*/
+.sub {
+	background: rgb(255, 230, 230);
+  position: absolute;
+  top: 120%;
+  left: 5%;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+}
+
+.sub li{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub li a {
+	color: #666;
+  font-size: 20px;
+  height: inherit;
+  width: 100%;
+  display: block;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.sub li:hover {
+  background:#fff;
+
+}
+
+.sub li:hover a{
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
